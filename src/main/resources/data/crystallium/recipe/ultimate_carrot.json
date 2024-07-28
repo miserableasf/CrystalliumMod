@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "PAP",
+    " P"
+  ],
+  "key": {
+    "P": {
+      "item": "crystallium:ultimate_piece"
+    },
+    "A": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "id": "crystallium:ultimate_apple"
+  }
+}
