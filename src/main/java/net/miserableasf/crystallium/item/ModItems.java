@@ -104,7 +104,7 @@ public class ModItems {
                     .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 1), 1f)
                     .effect(new MobEffectInstance(MobEffects.SLOW_FALLING, 600, 0), 1f)
                     .build()).rarity(Rarity.EPIC)));
-//    TODO: textures
+
     public static final RegistryObject<Item> SAPPHIRE_CARROT = ITEMS.register("sapphire_carrot", () -> new Item(new Item.Properties()
             .rarity(Rarity.UNCOMMON)
             .food(new FoodProperties.Builder()
