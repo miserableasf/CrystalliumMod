@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "crystallium:obsidian_crystal"
+    },
+    {
+      "item": "crystallium:ruby"
+    },
+    {
+      "item": "crystallium:topaz"
+    },
+    {
+      "item": "crystallium:sapphire"
+    }
+  ],
+  "result": {
+    "id": "crystallium:ultimate_piece",
+    "count": 4
+  }
+}

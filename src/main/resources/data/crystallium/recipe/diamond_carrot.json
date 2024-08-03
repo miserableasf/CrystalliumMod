@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EAE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "id": "crystallium:diamond_carrot"
+  }
+}
