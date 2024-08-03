@@ -11,6 +11,7 @@ import net.minecraft.text.Text;
 public class CrystalliumItemGroups {
     private static final Text CRYSTALLIUM_TITLE = Text.translatable("itemGroup." + Crystallium.MOD_ID + ".crystallium_tab");
     private static final Text CRYSTALLIUM_FOOD_TITLE = Text.translatable("itemGroup." + Crystallium.MOD_ID + ".crystallium_food_tab");
+    private static final Text CRYSTALLIUM_WEAPONS_TITLE = Text.translatable("itemGroup." + Crystallium.MOD_ID + ".crystallium_weapons_tab");
 
     public static final ItemGroup CRYSTALLIUM_TAB = register("crystallium_tab", FabricItemGroup.builder()
             .displayName(CRYSTALLIUM_TITLE)
@@ -21,6 +22,14 @@ public class CrystalliumItemGroups {
                 entries.add(new ItemStack(CrystalliumItems.RUBY));
                 entries.add(new ItemStack(CrystalliumItems.OBSIDIAN_CRYSTAL));
                 entries.add(new ItemStack(CrystalliumItems.ULTIMATE_PIECE));
+            })
+            .build());
+
+    public static final ItemGroup CRYSTALLIUM_WEAPONS_TAB = register("crystallium_weapons_tab", FabricItemGroup.builder()
+            .displayName(CRYSTALLIUM_WEAPONS_TITLE)
+            .icon(CrystalliumItems.RUBY_GAUNTLET::getDefaultStack)
+            .entries((displayContext, entries) -> {
+                entries.add(new ItemStack(CrystalliumItems.RUBY_GAUNTLET));
             })
             .build());
 //TODO: weapons

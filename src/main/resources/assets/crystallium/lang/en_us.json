@@ -33,6 +33,9 @@
   "block.crystallium.topaz_ore": "Topaz Ore",
   "block.crystallium.ruby_ore": "Ruby Ore",
 
+  "item.crystallium.ruby_gauntlet": "Ruby Gauntlet",
+
   "itemGroup.crystallium.crystallium_tab": "Crystallium Crystals",
-  "itemGroup.crystallium.crystallium_food_tab": "Crystallium Food"
+  "itemGroup.crystallium.crystallium_food_tab": "Crystallium Food",
+  "itemGroup.crystallium.crystallium_weapons_tab": "Crystallium Weapons"
 }

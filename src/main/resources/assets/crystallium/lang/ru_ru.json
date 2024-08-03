@@ -33,6 +33,9 @@
   "block.crystallium.topaz_ore": "Топазная Руда",
   "block.crystallium.ruby_ore": "Рубиновая Руда",
 
+  "item.crystallium.ruby_gauntlet": "Рубиновая Перчатка",
+
   "itemGroup.crystallium.crystallium_tab": "Кристаллы из Кристаллиума",
-  "itemGroup.crystallium.crystallium_food_tab": "Еда из Кристаллиума"
+  "itemGroup.crystallium.crystallium_food_tab": "Еда из Кристаллиума",
+  "itemGroup.crystallium.crystallium_weapons_tab": "Оружие из Кристаллиума"
 }

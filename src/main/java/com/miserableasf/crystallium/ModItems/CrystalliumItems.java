@@ -184,9 +184,9 @@ public class CrystalliumItems {
 
     public static final Item RUBY_GAUNTLET = register("ruby_gauntlet", new RubyGauntlet());
 
-    public static final SwordItem SAPPHIRE_KNIFE = register("sapphire_knife", new Item(() -> new SwordItem(
-//TODO: tool material yee
-    )));
+//    public static final SwordItem SAPPHIRE_KNIFE = register("sapphire_knife", new Item(() -> new SwordItem(
+////TODO: tool material yee
+//    )));
 //todo: sapphire knife, topaz spear, obsidian mace, ultimate katana
     public static <T extends Item> T register(String name, T item) {
         return Registry.register(Registries.ITEM, Crystallium.id(name), item);

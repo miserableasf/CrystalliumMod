@@ -24,9 +24,11 @@ public class RubyGauntlet extends Item {
 
         if (world != null && !world.isClient()) {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 60, 1));
+            user.getItemCooldownManager().set(this, 100);
 
             if (hasRubyGauntletInOffHand(user)) {
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 80, 2));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 60, 2));
+                user.getItemCooldownManager().set(this, 100);
             }
         }
 
