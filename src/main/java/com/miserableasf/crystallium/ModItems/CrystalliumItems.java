@@ -1,6 +1,7 @@
 package com.miserableasf.crystallium.ModItems;
 
 import com.miserableasf.crystallium.Crystallium;
+import com.miserableasf.crystallium.ModItems.enums.CrystalliumToolMaterials;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -184,10 +185,24 @@ public class CrystalliumItems {
 
     public static final Item RUBY_GAUNTLET = register("ruby_gauntlet", new RubyGauntlet());
 
-//    public static final SwordItem SAPPHIRE_KNIFE = register("sapphire_knife", new Item(() -> new SwordItem(
-////TODO: tool material yee
-//    )));
-//todo: sapphire knife, topaz spear, obsidian mace, ultimate katana
+    public static final SwordItem SAPPHIRE_KNIFE = register("sapphire_knife", new SwordItem(
+            CrystalliumToolMaterials.SAPPHIRE, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.SAPPHIRE, 3, -1f))
+    ));
+
+    public static final SwordItem TOPAZ_SPEAR = register("topaz_spear", new SwordItem(
+            CrystalliumToolMaterials.TOPAZ, new Item.Settings()
+        .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.TOPAZ, 2, -2.4f))));
+
+    public static final SwordItem OBSIDIAN_MACE = register("obsidian_mace", new SwordItem(
+            CrystalliumToolMaterials.OBSIDIAN, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.OBSIDIAN, 3, -5f))));
+//todo: sapphire knife, topaz spear, obsidian mace, ultimate katana (models)
+//    TODO: models in blockbench, also think about mace and katana
+//    TODO: add to mace mace item, to katana some skills on use.
+    public static final SwordItem ULTIMATE_KATANA = register("ultimate_katana", new SwordItem(
+            CrystalliumToolMaterials.ULTIMATE, new Item.Settings()
+        .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.ULTIMATE, 5, -1f))));
     public static <T extends Item> T register(String name, T item) {
         return Registry.register(Registries.ITEM, Crystallium.id(name), item);
     }
