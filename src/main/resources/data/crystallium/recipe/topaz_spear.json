@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TUT",
+    "TST"
+  ],
+  "key": {
+    "T": {
+      "item": "crystallium:topaz"
+    },
+    "U": {
+      "item": "crystallium:ultimate_piece"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "crystallium:topaz_spear"
+  }
+}

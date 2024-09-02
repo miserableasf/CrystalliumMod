@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OKO",
+    "CUC",
+    "OSO"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "C": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "U": {
+      "item": "crystallium:ultimate_piece"
+    },
+    "K": {
+      "item": "crystallium:obsidian_crystal"
+    }
+  },
+  "result": {
+    "id": "crystallium:obsidian_mace"
+  }
+}

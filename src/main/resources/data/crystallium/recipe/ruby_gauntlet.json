@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RWR"
+  ],
+  "key": {
+    "R": {
+      "item": "crystallium:ruby"
+    },
+    "U": {
+      "item": "crystallium:ultimate_piece"
+    }
+  },
+  "result": {
+    "id": "crystallium:ruby_gauntlet"
+  }
+}

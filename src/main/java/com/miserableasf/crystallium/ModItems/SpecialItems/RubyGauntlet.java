@@ -1,4 +1,4 @@
-package com.miserableasf.crystallium.ModItems;
+package com.miserableasf.crystallium.ModItems.SpecialItems;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -31,7 +31,6 @@ public class RubyGauntlet extends Item {
                 user.getItemCooldownManager().set(this, 100);
             }
         }
-
         return new TypedActionResult<>(ActionResult.SUCCESS, stack);
     }
 

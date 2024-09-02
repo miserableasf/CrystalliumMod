@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RTO",
+    "GNS",
+    "DNE"
+  ],
+  "key": {
+    "R": {
+      "item": "crystallium:ruby"
+    },
+    "T": {
+      "item": "crystallium:topaz"
+    },
+    "O": {
+      "item": "crystallium:obsidian_crystal"
+    },
+    "N": {
+      "item": "crystallium:ultimate_piece"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "crystallium:sapphire"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "id": "crystallium:ultimate_katana"
+  }
+}

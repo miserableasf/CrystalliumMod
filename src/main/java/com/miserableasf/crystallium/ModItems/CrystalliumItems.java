@@ -1,10 +1,15 @@
 package com.miserableasf.crystallium.ModItems;
 
 import com.miserableasf.crystallium.Crystallium;
+import com.miserableasf.crystallium.ModItems.SpecialItems.ObsidianMace;
+import com.miserableasf.crystallium.ModItems.SpecialItems.RubyGauntlet;
+import com.miserableasf.crystallium.ModItems.SpecialItems.TopazSpear;
+import com.miserableasf.crystallium.ModItems.SpecialItems.UltimateKatana;
 import com.miserableasf.crystallium.ModItems.enums.CrystalliumToolMaterials;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
@@ -182,27 +187,25 @@ public class CrystalliumItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 1200, 0), 1f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 1200, 0), 1f)
             .build()).rarity(Rarity.EPIC)));
-
+//TODO: recipes 
     public static final Item RUBY_GAUNTLET = register("ruby_gauntlet", new RubyGauntlet());
 
-    public static final SwordItem SAPPHIRE_KNIFE = register("sapphire_knife", new SwordItem(
-            CrystalliumToolMaterials.SAPPHIRE, new Item.Settings()
-            .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.SAPPHIRE, 3, -1f))
-    ));
-
-    public static final SwordItem TOPAZ_SPEAR = register("topaz_spear", new SwordItem(
-            CrystalliumToolMaterials.TOPAZ, new Item.Settings()
+//    public static final SwordItem SAPPHIRE_KNIFE = register("sapphire_knife", new SwordItem(
+//            CrystalliumToolMaterials.SAPPHIRE, new Item.Settings()
+//            .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.SAPPHIRE, 3, -1f))
+//    ));
+    public static final SwordItem TOPAZ_SPEAR = register("topaz_spear", new TopazSpear(
+            CrystalliumToolMaterials.TOPAZ, new Item.Settings().rarity(Rarity.RARE)
         .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.TOPAZ, 2, -2.4f))));
 
-    public static final SwordItem OBSIDIAN_MACE = register("obsidian_mace", new SwordItem(
-            CrystalliumToolMaterials.OBSIDIAN, new Item.Settings()
-            .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.OBSIDIAN, 3, -5f))));
+    public static final SwordItem OBSIDIAN_MACE = register("obsidian_mace", new ObsidianMace(
+            CrystalliumToolMaterials.OBSIDIAN, new Item.Settings().rarity(Rarity.RARE)
+            .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.OBSIDIAN, 3, -1f))));
 //todo: sapphire knife, topaz spear, obsidian mace, ultimate katana (models)
-//    TODO: models in blockbench, also think about mace and katana
-//    TODO: add to mace mace item, to katana some skills on use.
-    public static final SwordItem ULTIMATE_KATANA = register("ultimate_katana", new SwordItem(
-            CrystalliumToolMaterials.ULTIMATE, new Item.Settings()
+    public static final SwordItem ULTIMATE_KATANA = register("ultimate_katana", new UltimateKatana(
+            CrystalliumToolMaterials.ULTIMATE, new Item.Settings().rarity(Rarity.EPIC)
         .attributeModifiers(SwordItem.createAttributeModifiers(CrystalliumToolMaterials.ULTIMATE, 5, -1f))));
+
     public static <T extends Item> T register(String name, T item) {
         return Registry.register(Registries.ITEM, Crystallium.id(name), item);
     }

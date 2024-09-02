@@ -30,6 +30,9 @@ public class CrystalliumItemGroups {
             .icon(CrystalliumItems.RUBY_GAUNTLET::getDefaultStack)
             .entries((displayContext, entries) -> {
                 entries.add(new ItemStack(CrystalliumItems.RUBY_GAUNTLET));
+                entries.add(new ItemStack(CrystalliumItems.TOPAZ_SPEAR));
+                entries.add(new ItemStack(CrystalliumItems.OBSIDIAN_MACE));
+                entries.add(new ItemStack(CrystalliumItems.ULTIMATE_KATANA));
             })
             .build());
 //TODO: weapons
